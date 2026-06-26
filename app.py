@@ -4,21 +4,21 @@ import time
 st.set_page_config(page_title="Spazio Sicuro", page_icon="🤍", layout="centered")
 
 st.title("Ciao Ang, hai bisogno di aiuto? 🤍")
-st.write("Fai un respiro profondo. Sei al sicuro. Io sono qui con te. Usa i pulsanti qui sotto passo dopo passo.")
+st.write("Fai un respiro profondo. Sei al sicuro. Io sono qui con te. Usa i pulsanti qui sotto.")
 
-tab1, tab2, tab3 = st.tabs(["🧘 Respiro", "🧠 Domande per Calmarti", "📞 Chiama Mattia"])
+tab1, tab2, tab3 = st.tabs(["🧘 Respiro", "🧠 Domande per Calmarti", "📞 Chiamami"])
 
 with tab1:
     st.subheader("Respiriamo insieme")
-    st.write("Segui il ritmo qui sotto per rallentare il battito del cuore.")
+    st.write("Segui il ritmo qui sotto per rallentare il battito del cuore")
     if st.button("Clicca qui per iniziare a respirare"):
         placeholder = st.empty()
         for i in range(3):
-            placeholder.markdown("### 🧘 **INSPIRA...** dal naso (1... 2... 3... 4)")
+            placeholder.markdown("### 🧘 **INSPIRA... (1... 2... 3... 4)")
             time.sleep(4)
-            placeholder.markdown("### 🛑 **TRATTIENI...** il fiato (1... 2... 3... 4)")
+            placeholder.markdown("### 🛑 **TRATTIENI... (1... 2... 3... 4)")
             time.sleep(4)
-            placeholder.markdown("### 💨 **ESPIRA...** dalla bocca (1... 2... 3... 4)")
+            placeholder.markdown("### 💨 **ESPIRA... (1... 2... 3... 4)")
             time.sleep(4)
         placeholder.markdown("### ✨ Bravissima Angelica. Un altro respiro profondo. Va già un po' meglio?")
 
@@ -32,6 +32,6 @@ with tab2:
 
 with tab3:
     st.subheader("Parla con me")
-    st.write("Non sei sola, Angelica. Puoi chiamarmi subito.")
-    st.success("📞 **Chiama Mattia:** Fai clic sul mio numero se sei da telefono: +39 391 181 3294")
+    st.write("Non sei sola. Puoi chiamarmi subito.")
+    st.success("📞 **Chiamami:** Fai clic sul mio numero se sei da telefono: +39 391 181 3294")
 
