@@ -14,13 +14,13 @@ with tab1:
     if st.button("Clicca qui per iniziare a respirare"):
         placeholder = st.empty()
         for i in range(3):
-            placeholder.markdown("### 🧘 **INSPIRA... (1... 2... 3... 4)")
-            time.sleep(4)
-            placeholder.markdown("### 🛑 **TRATTIENI... (1... 2... 3... 4)")
-            time.sleep(4)
-            placeholder.markdown("### 💨 **ESPIRA... (1... 2... 3... 4)")
-            time.sleep(4)
-        placeholder.markdown("### ✨ Bravissima Angelica. Un altro respiro profondo. Va già un po' meglio?")
+            placeholder.markdown("### 🧘 **INSPIRA... (1... 2... 3...)")
+            time.sleep(3)
+            placeholder.markdown("### 🛑 **TRATTIENI... (1... 2... 3...)")
+            time.sleep(3)
+            placeholder.markdown("### 💨 **ESPIRA... (1... 2... 3...)")
+            time.sleep(3)
+        placeholder.markdown("### ✨ Bravissima more. Un altro respiro profondo. Va un po' meglio?")
 
 with tab2:
     st.subheader("Riconnettiti con la realtà")
